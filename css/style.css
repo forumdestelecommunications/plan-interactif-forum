@@ -161,12 +161,12 @@ svg{
   left: 0;
   right: 0;
   padding: 16px 0 32px 0;
-  background-image: linear-gradient(to bottom, white, white 80%, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to bottom, white, white 85%, rgba(255, 255, 255, 0));
 }
 
 .left-sidebar #logo-forum {
-  width: 35%;
-  min-height: 40px;
+  width: 100%;
+  min-height: 80px;
   float: left;
   margin: 8px 0;
   background-image: url(../img/logo_black_256.png);
