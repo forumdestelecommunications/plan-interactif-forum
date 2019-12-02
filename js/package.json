@@ -615,19 +615,19 @@
 		"Start Up": [
 			{
 				"nom": "ClaraVista",
-				"presentation": "ClaraVista, créée par 2 senior managers cde McKinsey, accompagne des entreprises leaders de leur secteur dans leur transformation client, data et digitale. Acteur hybride entre conseil en stratégie, bigdata/IA/datamining et agence CRM & digitale, ClaraVista comprend aujourd’hui une quarantaine de personnes (à Paris, New York et Singapour), dédiées à 4 activités: Stratégie marketing et CRM, Data Science, Développement d’une plateforme et d’algorithmes de Machine Learning et Marketing opérationnel",
-				"creation": "2001",
-				"staff": "",
+				"presentation": "ClaraVista, créée par 2 senior managers cde McKinsey, accompagne des entreprises leaders de leur secteur dans leur transformation client, data et digitale.<br>Acteur hybride entre conseil en stratégie, bigdata/IA/datamining et agence CRM & digitale, ClaraVista comprend aujourd’hui une quarantaine de personnes (à Paris, New York et Singapour), dédiées à 4 activités :<br>- Stratégie marketing et CRM<br>- Data Science<br>- Développement d’une plateforme et d’algorithmes de Machine Learning<br>- Marketing opérationnel",
+				"creation": "Décembre 2001",
+				"staff": "50 personnes",
 				"stafffr": "",
-				"revenu": "5 500 000 €",
-				"revenufr": "",
+				"revenu": "",
+				"revenufr": "Entre 5 500 000 et 6 millions",
 				"salaire": "",
-				"typedestage": "Type stage : - Conseil en stratégie Marketing : Participer à des missions de conseil<br>- Data Science: Analyser les données CRM des entreprises (navigation, achats, applis mobiles)<br>- Machine Learning: Développer la plateforme logicielle de Machine Learning de ClaraVista",
-				"recherche": "",
-				"recrutement": "",
+				"typedestage": "- Conseil en stratégie Marketing : Participer à des missions de conseil<br>- Data Science: Analyser les données CRM des entreprises (navigation, achats, applis mobiles)<br>- Machine Learning: Développer la plateforme logicielle de Machine Learning de ClaraVista",
+				"recherche": "- Conseil : Esprit synthétique, rigueur, qualité d’expression<br>- Data Science : Goût pour les mathématiques<br>- Machine Learning : Passion pour le dev et l’algorithmie",
+				"recrutement": "Envoyez votre CV + lettre de motivation par mail à recrutement@claravista.fr",
 				"implantation": "France & Monde",
 				"type": "startup",
-				"image": ""
+				"image": "img/ClaraVista.png"
 			},
 			{
 				"nom": "Cyberlangel",
@@ -643,7 +643,7 @@
 				"recrutement": "2 à 3 tours (Un Rh et les suivants avec les opérationnels)",
 				"implantation": "Paris (Siège au Parc Monceau) Londres, Berlin et New York",
 				"type": "startup",
-				"image": ""
+				"image": "img/Cybelangel.jpg"
 			},
 			{
 				"nom": "LeCab",
@@ -657,63 +657,47 @@
 				"typedestage": "- Data Analyst<br>- Développeur (Back: PHP, Node / Front: React Native)<br>- Product Owner & Product Manager<br>- QA<br>- Ingénieur-Testeur<br>- UX/UI ",
 				"recherche": " Empathique, autonome et rigoureux, vous souhaitez intégrer une entreprise en pleine croissance, s'appuyant sur un sens aigu de la qualité et le savoir-faire de nos collaborateurs & partenaires. Vous appréciez particulièrement le contact humain et faites preuve d’un fort esprit de service, de qualités relationnelles avérées et un goût du travail en équipe prononcé. Vos capacités d’analyse, d’imagination et de synthèse ont fait leurs preuves et vous êtes autonome dans la réalisation de vos tâches quotidiennes.",
 				"recrutement": "Entretien RH, Entretien avec des opérationnels et Mise en situation/test",
-				"implantation": "Paris 17, Sacisco",
+				"implantation": "Paris 17(déménagement à Puteaux en Décembre)",
 				"type": "startup",
-				"image": ""
+				"image": "img/LeCab.jpeg"
 			},
 			{
 				"nom": "Quantcube",
 				"presentation": "Quantcube Technology est une société FinTech en forte croissance spécialisée en Intelligence Economique à partir des données du Big Data, tel que les données satellitaires, les données des réseaux sociaux, les données des prêts particuliers et bien d’autre sources de données. L’analyse de ces multiples sources de données permet la création d’indicateurs économiques et financiers avancés à forte valeur ajoutée, à destination des grandes institutions financières et économiques.",
 				"creation": "2013",
-				"staff": "30",
+				"staff": "30 personnes<br>2 co-fondateurs<br>1 équipe opérationnelle<br>1 équipe Data science<br>1 équipe techno",
 				"stafffr": "",
 				"revenu": "",
 				"revenufr": "",
-				"salaire": "",
-				"typedestage": "Nous proposons des Stage de fin d’études avec pré-embauche Data Analyst: • Participer à des projets (big) data avec des outils statistiques et économétriques visant à la création d ’ indicateurs macro-économiques à partir de données structurées et non-structurées: offres d ’ emploi, données du transport maritime ou aérien, données des douanes, données des réseaux sociaux, images satellitaires, etc … • Développer des projets from scratch: de la compréhension d ’ un secteur/d ’ une donnée économique, l ’ identification de sources de données au pré-processing et mise en place de l ’ indicateur • Explorer et évaluer des sources de données disponibles et imaginez des nouvelles applications Data Acquisition: • Conception et développement des algorithmes d ’ acquisition et d ’ extraction de données Web (techniques de scraping) • Mise en place des indicateurs de suivi, tests et monitoring en temps réel • Automatisation et déploiement des processus de récupération et d ’ analyse • Participation à la recherche de données pertinentes • Rédaction de documentations techniques ",
+				"salaire": "A définir selon profil",
+				"typedestage": "Data Analyst :<br>• Participer à des projets (big) data avec des outils statistiques et économétriques visant à la création d’indicateurs macro-économiques à partir de données structurées et non-structurées : offres d’emploi, données du transport maritime ou aérien, données des douanes, données des réseaux sociaux, images satellitaires, etc…<br>• Développer des projets from scratch: de la compréhension d’un secteur/d’une donnée économique, l’identification de sources de données au pré-processing et mise en place de l’indicateur<br>• Explorer et évaluer des sources de données disponibles et imaginez des nouvelles applications<br>Data Acquisition :<br>• Conception et développement des algorithmes d’acquisition et d’extraction de données Web (techniques de scraping)<br>• Mise en place des indicateurs de suivi, tests et monitoring en temps réel<br>• Automatisation et déploiement des processus de récupération et d’analyse ",
 				"recherche": "",
 				"recrutement": "Les offres de stages sont également disponibles en contrat CDI",
-				"implantation": "international",
+				"implantation": "France et international",
 				"type": "startup",
-				"image": ""
-			},
-			{
-				"nom": "Quantmetry",
-				"presentation": "",
-				"typedestage": "",
-				"recrutement": "",
-				"salaire": "",
-				"recherche": "",
-				"creation": "",
-				"revenu": "",
-				"revenufr": "",
-				"staff": "",
-				"stafffr": "",
-				"implantation": "",
-				"type": "startup",
-				"image": ""
+				"image": "img/quantcube.png"
 			},
 			{
 				"nom": "Wiremind",
 				"presentation": "Wiremind est spécialisé dans le développement de solutions de Revenue Management destinées aux industries du transport, du tourisme et de l’événementiel. Alliant un savoir-faire technique solide (Data Science, Software Engineering) à des expériences utilisateur simples, fluides et fiables, nos problématiques vont de la prédiction de la demande en voyageurs, à la restitution en 3D du remplissage optimal de fret aérien en colis de dimensions variés.",
-				"typedestage": "Stages de 6 mois de fin d’études et CDI<br>Wiremind recherche des personnes qui souhaitent évoluer dans un contexte très tech, passionnées par la conception d'applications qui apportent des solutions concrètes à travers les mathématiques appliquées et le design, dans des secteurs variés. Si vous voulez progresser rapidement, prendre des responsabilités et voir le résultat concret de vos efforts dans une entreprise en forte croissance, rejoignez l’aventure!",
-				"recrutement": "- Entretien téléphonique - Entretien technique dans nos bureaux",
+				"typedestage": "Stages de 6 mois de fin d’études et CDI<br>Wiremind recherche des personnes qui souhaitent évoluer dans un contexte très tech, passionnées par la conception d'applications qui apportent des solutions concrètes à travers les mathématiques appliquées et le design, dans des secteurs variés.<br>Si vous voulez progresser rapidement, prendre des responsabilités et voir le résultat concret de vos efforts dans une entreprise en forte croissance, rejoignez l’aventure!",
+				"recrutement": "- Entretien téléphonique <br>- Entretien technique dans nos bureaux",
 				"salaire": "Selon profil",
-				"recherche": "",
+				"recherche": "- Full stack engineer<br>- Back-end engineer<br>- Data scientist",
 				"creation": "2014",
-				"revenu": "2,5M",
+				"revenu": "2.5M en 2019",
 				"revenufr": "",
 				"staff": "35",
-				"stafffr": "",
-				"implantation": "Paris 2",
+				"stafffr": "35",
+				"implantation": "Paris, 2e arrondissement. Nos services sont utilisés par nos clients sur 3 continents (Amérique, Asie, Europe).",
 				"type": "startup",
-				"image": ""
+				"image": "img/Wiremind.png"
 			},
 			{
 				"nom": "Shift technologies",
-				"presentation": "We are not just another start-up; we fight insurance fraud with AI! At Shift Technology we are proud to have a purpose: to help insurers fight insurance fraud and to automate the claims processes. Our SaaS solutions are being used to automate claims and detect fraud across the world! If you are someone motivated by meaningful work in a fast developing company, Shift Technology may just be the spot for you! Shift Technology has been changing the (insurance claims) game since 2014. Since opening our doors we’ve raised $100M USD, signed contracts with over 70 insurers across the world, been designated as one of the top 100 AI firms and top 20 Insurtechs globally! Headquartered in Paris, with sister offices in Boston, Toronto, Tokyo, Singapore, London, Madrid, Zurich, and Hong Kong, our team consists of more than 200 of the brightest developers, data scientists, and project managers in the business.",
-				"typedestage": "Data Scientist (Final year Interns) & Full stack developer (Final year Interns)",
-				"recrutement": "• Data scientist<br>• Software engineer<br>• Full stack developer<br>• Front end developer<br>• Senior front end developer<br>• Infrastructure engineer<br>• QA engineer<br>• Product manager Hiring process:<br>\t1- Screening call Interview (Background, motivations, location etc)<br>\t2- Technical Interview(s) (Technical assessment)<br>\t3- HR & Team Lead Interview(s) (Culture fit, values, motivations)<br>*Our recruitment process can be adjustable depending on the role",
+				"presentation": "We are not just another start-up; we fight insurance fraud with AI! At Shift Technology we are proud to have a purpose: to help insurers fight insurance fraud and to automate the claims processes. Our SaaS solutions are being used to automate claims and detect fraud across the world! If you are someone motivated by meaningful work in a fast developing company, Shift Technology may just be the spot for you!<br>Shift Technology has been changing the (insurance claims) game since 2014. Since opening our doors we’ve raised $100M USD, signed contracts with over 70 insurers across the world, been designated as one of the top 100 AI firms and top 20 Insurtechs globally!<br>Headquartered in Paris, with sister offices in Boston, Toronto, Tokyo, Singapore, London, Madrid, Zurich, and Hong Kong, our team consists of more than 200 of the brightest developers, data scientists, and project managers in the business.",
+				"typedestage": "• Data Scientist (Final year Interns)<br>• Full stack developer (Final year Interns)",
+				"recrutement": "• Data scientist<br>• Software engineer<br>• Full stack developer<br>• Front end developer<br>• Senior front end developer<br>• Infrastructure engineer<br>• QA engineer<br>• Product manager<br>Hiring process:<br>1- Screening call Interview (Background, motivations, location etc)<br>2- Technical Interview(s) (Technical assessment)<br>3- HR & Team Lead Interview(s) (Culture fit, values, motivations)<br>*Our recruitment process can be adjustable depending on the role",
 				"salaire": "",
 				"recherche": "",
 				"creation": "2014",
@@ -723,7 +707,7 @@
 				"stafffr": "190",
 				"implantation": "Paris, Boston, Tokyo and Singapour",
 				"type": "startup",
-				"image": ""
+				"image": "img/shift_technology.jpeg"
 			}
 		]
 	}
