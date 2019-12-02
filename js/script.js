@@ -1,23 +1,23 @@
 function main() {
-  let xhttp = new XMLHttpRequest();
+  var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState === 4 && this.status === 200) {
-      let stands = JSON.parse(this.responseText).stands;
+      var stands = JSON.parse(this.responseText).stands;
 
-      let zones = document.querySelectorAll("rect, path");
-      for (let i = 0; i < zones.length; i++) {
+      var zones = document.querySelectorAll("rect, path");
+      for (var i = 0; i < zones.length; i++) {
         zones[i].addEventListener("click", function () {
           onStandClicked(this.id,stands[this.id]);
         });
       }
 
-      let select = document.getElementById("expo-select");
+      var select = document.getElementById("expo-select");
       buildSidebar(stands,select.value);
       select.addEventListener("change", function () {
         onSidebarChanged(stands,this.value);
       });
     }
-  }
+  };
   xhttp.open("GET",'js/package.json',true);
   xhttp.send();
 }
@@ -38,20 +38,20 @@ function show(popup_id) {
 }
 
 function popupColor(color) {
-  let texts = document.getElementsByClassName("colored");
-  for (let i = 0; i < texts.length; i++) {
+  var texts = document.getElementsByClassName("colored");
+  for (var i = 0; i < texts.length; i++) {
     texts[i].style.color = color;
   }
 
-  let infos = document.getElementsByClassName("bgcolored");
-  for (let i = 0; i < infos.length; i++) {
+  var infos = document.getElementsByClassName("bgcolored");
+  for (var i = 0; i < infos.length; i++) {
     infos[i].style.backgroundColor = color;
   }
 }
 
 function nomStand(id) {
   switch (id) {
-    case "ecoles":
+    case "ecole":
       return "Espace Écoles";
       break;
     case "startups1":
@@ -65,30 +65,25 @@ function nomStand(id) {
 
 function couleurType(type) {
   switch (type) {
-    case "abac":
-      return "#fd5d47";
-      break;
-    case "detbtp":
+    case "telephonie":
+      return "#fa7024";
+    case "informatique":
+      return "#2c47ea";
+    case "industrie":
+      return "#4ab744";
+    case "banque":
+      return "#e41818";
+    case "auditconseil":
       return "#fcc507";
-      break;
-    case "devlog":
-      return "#4165fd";
-      break;
-    case "induelec":
-      return "#612390";
-      break;
-    case "telecomssii":
-      return "#0c8245";
-      break;
-    case "startups":
-      return "#3e81cc";
-      break;
-    case "ecoles":
-      return "#d05b7f";
-      break;
+    case "partenaire":
+      return "#944f64";
+    case "startup":
+      return "#d8d4d4";
+    case "ecole":
+      return "#d47fa4";
     default:
       return "#606060";
-      break;
+
   }
 }
 
@@ -111,20 +106,20 @@ function onStandClicked(id,exposant) {
 /* --------------------------- Popup Liste -----------------------------*/
 
 function buildPopupListe(id,exposants) {
-  let parent = document.getElementById("popup-liste");
+  var parent = document.getElementById("popup-liste");
   parent.innerHTML = "";
 
-  let row;
-  for (let i = 0; i < exposants.length; i++) {
+  var row;
+  for (var i = 0; i < exposants.length; i++) {
     if (i%4 === 0) {
       row = document.createElement("div");
       row.className = "row";
       parent.appendChild(row);
     }
 
-    let lien = document.createElement("div");
+    var lien = document.createElement("div");
     lien.className = "col-3";
-    if (exposants[i].type !== "ecoles") {
+    if (exposants[i].type !== "ecole") {
       lien.addEventListener("click",function () {
         hide("all");
         buildPopupExposant(id,exposants[i]);
@@ -133,23 +128,23 @@ function buildPopupListe(id,exposants) {
     }
     row.appendChild(lien);
 
-    let image = document.createElement("div");
+    var image = document.createElement("div");
     image.className = "img-container logo-liste";
     image.style.backgroundImage = "url(" + exposants[i].image + ")";
     lien.appendChild(image);
 
-    let nom = document.createElement("h2");
+    var nom = document.createElement("h2");
     nom.className = "nom-liste";
     nom.innerHTML = exposants[i].nom;
     lien.appendChild(nom);
   }
-  let close_bar = document.createElement("div");
+  var close_bar = document.createElement("div");
   close_bar.className = "close-bar";
   parent.appendChild(close_bar);
 
-  let bouton = document.createElement("button");
+  var bouton = document.createElement("button");
   bouton.className = "bgcolored bold";
-  bouton.innerHTML = "Fermer"
+  bouton.innerHTML = "Fermer";
   bouton.addEventListener("click",function () {
     hide("popup-liste");
   });
@@ -166,12 +161,12 @@ function buildPopupExposant(id,exposant) {
   document.getElementById("presentation").innerHTML = exposant.presentation;
 
   /* On affiche seulement les champs "courts" communiqués */
-  let informations = "";
+  var informations = "";
   if (exposant.creation !== "") {
     informations += '<li class="bgcolored"><span class="bold">Date de création : </span>' + exposant.creation + '</li>';
   }
   if (exposant.revenu !== "" || exposant.revenufr !== "") {
-    let revenu;
+    var revenu;
     if (exposant.revenufr === "") {
       revenu = exposant.revenu;
     } else if (exposant.revenu === "") {
@@ -182,7 +177,7 @@ function buildPopupExposant(id,exposant) {
     informations += '<li class="bgcolored"><span class="bold">Chiffre d\'affaire : </span>' + revenu + '</li>';
   }
   if (exposant.staff !== "" || exposant.stafffr !== "") {
-    let staff;
+    var staff;
     if (exposant.stafffr === "") {
       staff = exposant.staff;
     } else if (exposant.staff === "") {
@@ -202,29 +197,32 @@ function buildPopupExposant(id,exposant) {
   document.getElementById("recrutement").innerHTML = (exposant.recrutement === "" ? "N.C." : exposant.recrutement);
 
   switch (exposant.type) {
-    case "abac":
-      document.getElementById("type").innerHTML = "Assurance - Banques - Audit - Conseil";
+    case "telephonie":
+      document.getElementById("type").innerHTML = "Opérateurs / Constructeurs Télécom";
       break;
-    case "detbtp":
-      document.getElementById("type").innerHTML = "Défense - Énergie - Transport - BTP";
+    case "informatique":
+      document.getElementById("type").innerHTML = "IT";
       break;
-    case "devlog":
-      document.getElementById("type").innerHTML = "Développement de Logiciels";
+    case "industrie":
+      document.getElementById("type").innerHTML = "Industrie";
       break;
-    case "induelec":
-      document.getElementById("type").innerHTML = "Industrie - Électronique";
+    case "banque":
+      document.getElementById("type").innerHTML = "Banque";
       break;
-    case "telecomssii":
-      document.getElementById("type").innerHTML = "Opérateurs de Télécommunication - SSII";
+    case "auditconseil":
+      document.getElementById("type").innerHTML = "Audit / Conseil";
       break;
-    case "startups":
+    case "partenaire":
+      document.getElementById("type").innerHTML = "Partenaires";
+      break;
+    case "startup":
       document.getElementById("type").innerHTML = "Start-Ups";
       break;
-    case "ecoles":
+    case "ecole":
       document.getElementById("type").innerHTML = "Écoles";
       break;
     default:
-      document.getElementById("type").innerHTML = "";
+      document.getElementById("type").innerHTML = "Autre";
       break;
   }
   popupColor(couleurType(exposant.type))
@@ -233,12 +231,12 @@ function buildPopupExposant(id,exposant) {
 /* --------------------------- Sidebar -----------------------------*/
 
 function buildSidebar(stands,value) {
-  let parent = document.getElementById("exposant-list");
+  var parent = document.getElementById("exposant-list");
   parent.innerHTML = "";
 
-  for (let id in stands) {
+  for (var id in stands) {
     if (Array.isArray(stands[id])) {
-      for (let i in stands[id]) {
+      for (var i in stands[id]) {
         if (value === "all") {
           addExposantToSidebar(id,stands[id][i],parent);
         } else {
@@ -260,11 +258,11 @@ function buildSidebar(stands,value) {
 }
 
 function addExposantToSidebar(id,exposant,parent) {
-  let exposantLi = document.createElement("li");
+  var exposantLi = document.createElement("li");
   exposantLi.innerHTML = exposant.nom + " (" + nomStand(id) + ")";
   /* exposantLi.appendChild(document.createTextNode(exposant.nom + " (" + nomStand(id) + ")")); */
   exposantLi.style.backgroundColor = couleurType(exposant.type)
-  if (exposant.type !== "ecoles") {
+  if (exposant.type !== "ecole") {
     exposantLi.addEventListener("click", function () {
       onSidebarClicked(id,exposant);
     });
