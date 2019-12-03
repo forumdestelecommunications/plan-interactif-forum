@@ -612,7 +612,7 @@
 			"type": "auditconseil",
 			"image": "img/Wavestone.png"
 		},
-		"Start Up": [
+		"Start-Up": [
 			{
 				"nom": "ClaraVista",
 				"presentation": "ClaraVista, créée par 2 senior managers cde McKinsey, accompagne des entreprises leaders de leur secteur dans leur transformation client, data et digitale.<br>Acteur hybride entre conseil en stratégie, bigdata/IA/datamining et agence CRM & digitale, ClaraVista comprend aujourd’hui une quarantaine de personnes (à Paris, New York et Singapour), dédiées à 4 activités :<br>- Stratégie marketing et CRM<br>- Data Science<br>- Développement d’une plateforme et d’algorithmes de Machine Learning<br>- Marketing opérationnel",

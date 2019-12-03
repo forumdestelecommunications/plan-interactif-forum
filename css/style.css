@@ -64,6 +64,9 @@ svg{
 
 .popup #logo-exposant {
   min-height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .popup #nom-exposant {
@@ -207,4 +210,5 @@ svg{
   margin: auto;
   font-size: 24px;
 }
+
 

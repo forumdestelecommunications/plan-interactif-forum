@@ -4,7 +4,7 @@ function main() {
     if (this.readyState === 4 && this.status === 200) {
       var stands = JSON.parse(this.responseText).stands;
 
-      var zones = document.querySelectorAll("rect, path");
+      var zones = document.querySelectorAll("g");
       for (var i = 0; i < zones.length; i++) {
         zones[i].addEventListener("click", function () {
           onStandClicked(this.id,stands[this.id]);
@@ -119,6 +119,7 @@ function buildPopupListe(id,exposants) {
 
     var lien = document.createElement("div");
     lien.className = "col-3";
+    console.log(exposants[1].id);
     if (exposants[i].type !== "ecole") {
       lien.addEventListener("click",function () {
         hide("all");
