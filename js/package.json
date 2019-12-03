@@ -1,5 +1,5 @@
 {
-	"name": "Plan interactif du Forum des Télécommunications",
+	"name": "Plan interactif du Forum des Teleommunications",
 	"edition": "27",
 	"author": "Forum des Télécommunications",
 	"license": "ISC",
@@ -28,12 +28,12 @@
 			{
 				"nom": "Fimtech",
 				"type": "ecole",
-				"image": ""
+				"image": "img/fimtech.png"
 			},
 			{
 				"nom": "T&MA",
 				"type": "ecole",
-				"image": ""
+				"image": "img/tema.jpg"
 			}
 		],
 		"C04": {
